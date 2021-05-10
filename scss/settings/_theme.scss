@@ -1,21 +1,19 @@
 //// COLORS ////
 
 $colors: (
-  'primary': hsl(0, 0, 0), // black
-  'second': hsl(100, 100%, 100%), //white 
-  'third': hsl(179, 81%, 29%) , // Dark cyan
-  'third-hover': hsl(178.3,54.5%,61.2%), // Cyan light
-  'fourth': hsl(215, 19%, 25%), // Dark grey blue
-  'fifth': hsl(25, 84%, 86%), // Pale Orange
-  'sixth': hsl(43, 78%, 98%), // Light cream,
-  'seventh': hsl(215, 5%, 54%), // Grey
-  'eight': hsl(213.3,17%,20.8%), // Darker grey
-  'ninth': hsl(40,29%,93.9%)  // Light grey
+  'primary': hsl(40, 97%, 58%), // Yellow
+  'second': hsl(216, 17%, 35%), // Dark Navy
+  'third': hsl(217, 12%, 62%), // Dim Grey
+  'fourth': hsl(212, 41%, 93%), // Light Grey
+  'fifth': hsl(214, 37%, 96%), // Snow
+  'sixth': hsl(39, 100%, 94%), // Light Yellow
 );
 
 
 //// FONTS ////
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap'); // Space Mono
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap'); // Lexed Deca
+
 
 // Sizes
 $par-sizes: (
@@ -24,39 +22,35 @@ $par-sizes: (
 );
 
 $heading-sizes: (
-  'xsm': 1.125rem,
-  'sm': 2rem,
+  'sm': 1.5rem,
   'md': 2.5rem,
   'lg': 3rem,
-  'xlg': 4rem,
-  'xxlg': 7rem,
-  'xxxlg': 9.375rem,
+  'xlg': 3.5rem,
 );
 
 $par-lh-sizes: (
-  'sm': 1.75rem,
-  'md': 1.875rem,
+  'sm': 1.56rem,
+  'md': 1.75rem,
 );
 
 $heading-lh-sizes: (
-  'xsm': 1.75rem,
-  'sm': 2.5rem,
-  'md': 3.5rem,
-  'lg': 4rem,
+  'sm': 1.75rem,
+  'md': 3rem,
+  'lg': 3.5rem,
 );
 
 
 // Weight
 $font-weights: (
-  'md': 400,
-  'lg': 700,
-  'xlg': 900,
+  'sm': 400,
+  'md': 700,
 );
 
 
 // Family
 $font-family: (
-  'primary': 'Fraunces',
+  'primary': 'Lexend Deca',
+  'second': 'Space Mono',
 );
 
 
@@ -82,8 +76,8 @@ $margin-y: (
 );
 
 $padding-x: (
-  'sm': 1.5rem,
-  'md': 2.5rem,
-  'lg': 5rem,
+  'sm': 2rem,
+  'md': 6rem,
+  'lg': 10rem,
 );
 
