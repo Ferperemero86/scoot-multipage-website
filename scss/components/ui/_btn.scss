@@ -1,0 +1,18 @@
+.btn {
+  @include padding-y(0.9375rem);
+  @include hor-padding(2.5rem);
+  @include bg-color('primary');
+  @include font-family('second');
+  border: 0rem;
+
+
+  &:hover {
+
+    cursor: pointer;
+    @include b-color('primary');
+    @include color('primary');
+    background: none;
+    @include transition('background', 0.5s);
+  }
+
+}

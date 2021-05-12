@@ -1,3 +1,12 @@
+//// ALIGNMENT //// 
+
+// Relative - absolute alignment
+@mixin vertical-alignment {
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+
 //// ANIMATIONS //// 
 
 // Transitions
@@ -134,6 +143,12 @@
   padding-top: $size;
   padding-bottom: $size;
 }
+
+@mixin hor-padding($size) {
+  padding-left: $size;
+  padding-right: $size;
+}
+
 
 @mixin margin-y($size) {
   margin-top: $size;

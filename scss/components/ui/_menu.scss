@@ -1,0 +1,15 @@
+.menu {
+  @include font-family('second');
+}
+
+
+.menu-link {
+  @include color('third');
+  text-decoration: none;
+
+
+  &:not(:last-child) {
+    margin-right: 1.2rem;
+  }
+
+}

@@ -1,0 +1,16 @@
+.text-block-heading {
+  margin-bottom: 1.5rem;
+
+
+  @include breakpoint-up('md') {
+    margin-bottom: 2.5rem;
+  }
+
+}
+
+
+.text-block-btn {
+  margin-top: 2rem;
+}
+
+

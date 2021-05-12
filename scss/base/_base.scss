@@ -18,7 +18,6 @@ body {
 
 a {
   text-decoration: none;
-  @include color('primary-2');
 }
 
 .wrapper {
@@ -50,6 +49,45 @@ a {
   -webkit-border-radius: 0.5rem;
   border-radius: 0.5rem;
 }
+
+
+// Fonts // 
+
+// text 
+p {
+  @include font-size('sm', $par-sizes);
+
+
+  @include breakpoint-up('md') {
+    @include font-size('md', $par-sizes);
+  }
+
+}
+
+h1 {
+  @include font-size('md', $heading-sizes);
+
+
+  @include breakpoint-up('md') {
+    @include font-size('xlg', $heading-sizes);
+  }
+
+}
+
+h2 {
+  @include font-size('md', $heading-sizes);
+
+
+  @include breakpoint-up('md') {
+    @include font-size('lg', $heading-sizes);
+  }
+
+}
+
+h3, h4 {
+  @include font-size('sm', $heading-sizes);
+}
+
 
 
 // Images //

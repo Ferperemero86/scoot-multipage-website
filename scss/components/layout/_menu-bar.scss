@@ -1,0 +1,67 @@
+.menu-bar {
+  position: relative;
+  margin: 0 auto;
+  width: calc(100% - 1.5rem);
+  @include padding-y(1.3rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  @include breakpoint-up('md') {
+    width: calc(100% - 2.5rem);
+    @include padding-y(1.5rem);
+    justify-content: space-between;
+  }
+
+  @include breakpoint-up('lg') {
+    width: calc(100% - 10.5rem);
+    @include padding-y(1.3rem);
+  }
+
+}
+
+
+.menu-bar-hamburger {
+  position: absolute;
+  left: 0rem;
+
+
+  @include breakpoint-up('md') {
+    display: none;
+  }
+
+}
+
+
+.menu-bar-logo {
+  width: 4.6rem;
+
+
+  @include breakpoint-up('md') {
+    width: 6.6rem;
+  }
+
+}
+
+
+.menu-bar-menu {
+  display: none;
+
+
+  @include breakpoint-up('md') {
+    display: flex;
+  }
+
+}
+
+
+.menu-bar-btn {
+  display: none;
+
+
+  @include breakpoint-up('md') {
+    display: block;
+  }
+
+}
