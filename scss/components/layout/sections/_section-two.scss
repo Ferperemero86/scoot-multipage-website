@@ -1,0 +1,96 @@
+.section-two-card {
+  width: 100%;
+  margin-top: 5rem;
+  text-align: center;
+
+
+  @include breakpoint-up('md') {
+    margin-top: 8rem;
+  }
+
+  @include breakpoint-up('lg') {
+    //max-width: 80%;
+    margin-top: 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
+.section-two-card.first,
+.section-two-card.third {
+  flex-direction: row-reverse;
+}
+
+.section-two-card .card-header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 3rem;
+
+
+  @include breakpoint-up('lg') {
+    width: 40%;
+  }
+}
+
+.section-two-card .pattern {
+  max-width: 100%;
+  position: absolute;
+}
+
+.section-two-card .pattern.first,
+.section-two-card .pattern.third {
+  right: -2rem;
+
+  
+  @include breakpoint-up('md') {
+    right: -6rem;
+  }
+
+  @include breakpoint-up('lg') {
+    right: -10rem;
+    bottom: 0rem;
+  }
+
+}
+
+.section-two-card .pattern.second,
+.section-two-card .pattern.third {
+  top: 0rem;
+}
+
+.section-two-card .pattern.first {
+  bottom: 0rem;
+}
+
+.section-two-card .pattern.second {
+  @include horizontal-flip;
+  left: -2rem;
+
+  
+  @include breakpoint-up('md') {
+    left: -6rem;
+  }
+
+  @include breakpoint-up('lg') {
+    right: 0rem;
+    bottom: 0rem;
+    left: -10rem;
+  }
+ 
+}
+
+.section-two-card .card-body {
+
+
+  @include breakpoint-up('lg') {
+    width: 50%;
+    text-align: left;
+  }
+
+}
+
+.section-two-btn {
+  margin-top: 2rem;
+}

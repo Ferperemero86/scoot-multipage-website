@@ -348,8 +348,10 @@ html {
 }
 
 body {
-  font-family: "Lexend Deca";
+  font-family: "Space Mono";
+  color: #929baa;
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 * {
@@ -366,7 +368,7 @@ a {
 .wrapper {
   max-width: 125rem;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -403,6 +405,14 @@ p {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+}
+
+h1, h2, h3, h4 {
+  font-family: "Lexend Deca";
+}
+
+h2, h3, h4 {
+  color: #4a5668;
 }
 
 h1 {
@@ -756,14 +766,15 @@ h3, h4 {
 .section-one-header::before {
   content: '';
   position: absolute;
-  border: 2px solid;
+  border: 4px solid;
+  opacity: 0.3;
   border-color: #929baa;
   z-index: -1;
 }
 
 @media screen and (min-width: 62rem) {
   .section-one-header::before {
-    height: 80%;
+    height: 75%;
     top: 2rem;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -882,6 +893,118 @@ h3, h4 {
   }
 }
 
+.section-two-card {
+  width: 100%;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 62rem) {
+  .section-two-card {
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .section-two-card {
+    margin-top: 9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.section-two-card.first,
+.section-two-card.third {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.section-two-card .card-header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 90rem) {
+  .section-two-card .card-header {
+    width: 40%;
+  }
+}
+
+.section-two-card .pattern {
+  max-width: 100%;
+  position: absolute;
+}
+
+.section-two-card .pattern.first,
+.section-two-card .pattern.third {
+  right: -2rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .section-two-card .pattern.first,
+  .section-two-card .pattern.third {
+    right: -6rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .section-two-card .pattern.first,
+  .section-two-card .pattern.third {
+    right: -10rem;
+    bottom: 0rem;
+  }
+}
+
+.section-two-card .pattern.second,
+.section-two-card .pattern.third {
+  top: 0rem;
+}
+
+.section-two-card .pattern.first {
+  bottom: 0rem;
+}
+
+.section-two-card .pattern.second {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  left: -2rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .section-two-card .pattern.second {
+    left: -6rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .section-two-card .pattern.second {
+    right: 0rem;
+    bottom: 0rem;
+    left: -10rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .section-two-card .card-body {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+.section-two-btn {
+  margin-top: 2rem;
+}
+
 .menu {
   font-family: "Space Mono";
 }
@@ -899,7 +1022,8 @@ h3, h4 {
   width: 100%;
 }
 
-.card-header {
+.card-header .img {
+  max-width: 100%;
   border-radius: 50%;
 }
 
@@ -909,7 +1033,7 @@ h3, h4 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   background-color: #fcb72c;
-  font-family: "Space Mono";
+  color: white;
   border: 0rem;
 }
 

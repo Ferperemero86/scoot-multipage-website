@@ -5,9 +5,10 @@ html {
 }
 
 body {
-  @include font-family('primary');
-  @include color('primary-2');
+  @include font-family('second');
+  @include color('third');
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 * {
@@ -23,7 +24,7 @@ a {
 .wrapper {
   max-width: 125rem;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -64,6 +65,14 @@ p {
     @include line-height('md', $par-lh-sizes);
   }
 
+}
+
+h1, h2, h3, h4 {
+  @include font-family('primary');
+}
+
+h2, h3, h4 {
+  @include color('second');
 }
 
 h1 {
