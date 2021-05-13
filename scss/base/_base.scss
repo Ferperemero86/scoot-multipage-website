@@ -56,10 +56,12 @@ a {
 // text 
 p {
   @include font-size('sm', $par-sizes);
+  @include line-height('sm', $par-lh-sizes);
 
 
   @include breakpoint-up('md') {
     @include font-size('md', $par-sizes);
+    @include line-height('md', $par-lh-sizes);
   }
 
 }
@@ -167,16 +169,16 @@ h3, h4 {
 
 // Spaces //
 
-.margin-top {
-  @include margin-top('sm');
+.margin-y {
+  @include vertical-margin('sm');
 
 
   @include breakpoint-up('md') {
-    @include margin-top('md');
+    @include vertical-margin('md');
   }
 
   @include breakpoint-up('lg') {
-    @include margin-top('lg');
+    @include vertical-margin('lg');
   }
 
 }

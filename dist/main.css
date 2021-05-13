@@ -395,11 +395,13 @@ a {
 
 p {
   font-size: 0.9375rem;
+  line-height: 1.56rem;
 }
 
 @media screen and (min-width: 62rem) {
   p {
     font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -487,19 +489,22 @@ h3, h4 {
   color: #929baa;
 }
 
-.margin-top {
+.margin-y {
   margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
 }
 
 @media screen and (min-width: 62rem) {
-  .margin-top {
+  .margin-y {
     margin-top: 9rem;
+    margin-bottom: 9rem;
   }
 }
 
 @media screen and (min-width: 90rem) {
-  .margin-top {
+  .margin-y {
     margin-top: 12.5rem;
+    margin-bottom: 12.5rem;
   }
 }
 
@@ -727,6 +732,156 @@ h3, h4 {
   }
 }
 
+@media screen and (min-width: 62rem) {
+  .section-one {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .section-one {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.section-one-header {
+  position: relative;
+  display: none;
+}
+
+.section-one-header::before {
+  content: '';
+  position: absolute;
+  border: 2px solid;
+  border-color: #929baa;
+  z-index: -1;
+}
+
+@media screen and (min-width: 62rem) {
+  .section-one-header::before {
+    height: 80%;
+    top: 2rem;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .section-one-header::before {
+    width: 85%;
+    height: auto;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: -15%;
+    top: 50%;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .section-one-header {
+    display: block;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .section-one-header {
+    width: 100%;
+    justify-self: flex-start;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .section-one-header .aligned-icons {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .section-one-header .aligned-icons {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .aligned-icons-section {
+    padding-top: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .aligned-icons-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .section-one-body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+}
+
+.section-one-card {
+  text-align: center;
+}
+
+.section-one-card:not(:first-child) {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 90rem) {
+  .section-one-card:not(:first-child) {
+    margin-top: 0rem;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .section-one-card {
+    text-align: left;
+  }
+}
+
+.section-one-card .card-header {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .section-one-card .card-header {
+    display: none;
+  }
+}
+
 .menu {
   font-family: "Space Mono";
 }
@@ -738,6 +893,14 @@ h3, h4 {
 
 .menu-link:not(:last-child) {
   margin-right: 1.2rem;
+}
+
+.card, .section-one-card {
+  width: 100%;
+}
+
+.card-header {
+  border-radius: 50%;
 }
 
 .btn {
@@ -773,5 +936,10 @@ h3, h4 {
 
 .text-block-btn {
   margin-top: 2rem;
+}
+
+.aligned-icons {
+  display: -ms-grid;
+  display: grid;
 }
 /*# sourceMappingURL=main.css.map */

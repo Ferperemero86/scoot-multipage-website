@@ -155,9 +155,9 @@
   margin-bottom: $size;
 }
 
-@mixin margin-top($size) {
+@mixin vertical-margin($size) {
   $val: map-get($margin-y, $size);
   
-  margin-top: $val;
+  @include margin-y($val);
 }
 
