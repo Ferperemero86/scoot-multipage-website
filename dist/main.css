@@ -920,8 +920,7 @@ h3, h4 {
   }
 }
 
-.section-two-card.first,
-.section-two-card.third {
+.section-two-card:first-child, .section-two-card:nth-child(3) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -945,49 +944,44 @@ h3, h4 {
   position: absolute;
 }
 
-.section-two-card .pattern.first,
-.section-two-card .pattern.third {
+.section-two-card .pattern-first, .section-two-card .pattern-third {
   right: -2rem;
 }
 
 @media screen and (min-width: 62rem) {
-  .section-two-card .pattern.first,
-  .section-two-card .pattern.third {
+  .section-two-card .pattern-first, .section-two-card .pattern-third {
     right: -6rem;
   }
 }
 
 @media screen and (min-width: 90rem) {
-  .section-two-card .pattern.first,
-  .section-two-card .pattern.third {
+  .section-two-card .pattern-first, .section-two-card .pattern-third {
     right: -10rem;
-    bottom: 0rem;
   }
 }
 
-.section-two-card .pattern.second,
-.section-two-card .pattern.third {
+.section-two-card .pattern-second, .section-two-card .pattern-third {
   top: 0rem;
 }
 
-.section-two-card .pattern.first {
+.section-two-card .pattern-first {
   bottom: 0rem;
 }
 
-.section-two-card .pattern.second {
+.section-two-card .pattern-second {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   left: -2rem;
 }
 
 @media screen and (min-width: 62rem) {
-  .section-two-card .pattern.second {
+  .section-two-card .pattern-second {
     left: -6rem;
   }
 }
 
 @media screen and (min-width: 90rem) {
-  .section-two-card .pattern.second {
+  .section-two-card .pattern-second {
     right: 0rem;
     bottom: 0rem;
     left: -10rem;

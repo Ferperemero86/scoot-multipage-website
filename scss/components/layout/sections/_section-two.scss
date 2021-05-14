@@ -9,7 +9,6 @@
   }
 
   @include breakpoint-up('lg') {
-    //max-width: 80%;
     margin-top: 9rem;
     display: flex;
     justify-content: space-between;
@@ -18,9 +17,14 @@
 
 }
 
-.section-two-card.first,
-.section-two-card.third {
-  flex-direction: row-reverse;
+.section-two-card {
+
+  &:first-child,
+  &:nth-child(3) {
+
+    flex-direction: row-reverse;
+  }
+
 }
 
 .section-two-card .card-header {
@@ -37,49 +41,54 @@
 .section-two-card .pattern {
   max-width: 100%;
   position: absolute;
-}
 
-.section-two-card .pattern.first,
-.section-two-card .pattern.third {
-  right: -2rem;
+  &-first,
+  &-third {
+
+    right: -2rem;
 
   
-  @include breakpoint-up('md') {
-    right: -6rem;
+    @include breakpoint-up('md') {
+      right: -6rem;
+    }
+
+    @include breakpoint-up('lg') {
+      right: -10rem;
+    }
+
   }
 
-  @include breakpoint-up('lg') {
-    right: -10rem;
+  &-second, 
+  &-third {
+
+    top: 0rem;
+  }
+
+  &-first {
+
     bottom: 0rem;
   }
 
-}
+  &-second {
 
-.section-two-card .pattern.second,
-.section-two-card .pattern.third {
-  top: 0rem;
-}
-
-.section-two-card .pattern.first {
-  bottom: 0rem;
-}
-
-.section-two-card .pattern.second {
-  @include horizontal-flip;
-  left: -2rem;
+    @include horizontal-flip;
+    left: -2rem;
 
   
-  @include breakpoint-up('md') {
-    left: -6rem;
+    @include breakpoint-up('md') {
+      left: -6rem;
+    }
+
+    @include breakpoint-up('lg') {
+      right: 0rem;
+      bottom: 0rem;
+      left: -10rem;
+    }
+
   }
 
-  @include breakpoint-up('lg') {
-    right: 0rem;
-    bottom: 0rem;
-    left: -10rem;
-  }
- 
 }
+
 
 .section-two-card .card-body {
 
