@@ -1010,6 +1010,7 @@ h3, h4 {
 }
 
 .footer-header {
+  position: relative;
   text-align: center;
   background-color: #4a5668;
   padding-top: 5.5rem;
@@ -1024,6 +1025,28 @@ h3, h4 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+.footer-header .background {
+  width: 100%;
+  position: absolute;
+  left: -5rem;
+  bottom: 0rem;
+  z-index: 4;
+}
+
+@media screen and (min-width: 62rem) {
+  .footer-header .background {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .footer-header .background {
+    margin-left: 25rem;
   }
 }
 

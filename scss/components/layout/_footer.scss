@@ -5,6 +5,7 @@
 }
 
 .footer-header {
+  position: relative;
   text-align: center;
   @include bg-color('second');
   @include padding-y(5.5rem);
@@ -13,6 +14,24 @@
   @include breakpoint-up('lg') {
     display: flex;
     justify-content: space-between;  
+  }
+
+}
+
+.footer-header .background {
+  width: 100%;
+  position: absolute;
+  left: -5rem;
+  bottom: 0rem;
+  z-index: 4;
+
+
+  @include breakpoint-up('md') {
+    @include horizontal-alignment;
+  }
+
+  @include breakpoint-up('lg') {
+   margin-left: 25rem;
   }
 
 }
