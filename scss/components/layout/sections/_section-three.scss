@@ -1,0 +1,59 @@
+.section-three {
+  text-align: center;
+
+
+  .header {
+
+    padding: 0rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .body {
+
+    .card {
+
+      margin-top: 3.5rem;
+  
+      &-header {
+        
+        position: relative;
+        margin-bottom: 5rem;
+
+        .pattern {
+
+          display: block;
+          width: 96px;
+          height: 96px;
+          position: absolute;
+          bottom: -3rem;
+          @include bg-color('primary');
+          @include b-radius(50%);
+          @include horizontal-alignment;
+          
+
+          .text {
+
+            position: relative;
+            @include vertical-alignment;
+            @include color('second');
+            @include font-size('lg', $par-sizes);
+          }
+    
+        }
+
+      }
+  
+    }
+
+
+    @include breakpoint-up('lg') {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 2rem;
+    }
+  
+  }
+
+}
+

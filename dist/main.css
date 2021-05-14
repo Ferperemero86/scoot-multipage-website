@@ -1046,6 +1046,57 @@ h3, h4 {
   margin-top: 2rem;
 }
 
+.section-three {
+  text-align: center;
+}
+
+.section-three .header, .section-three .header-primary, .section-three .header-second {
+  padding: 0rem;
+  padding-bottom: 2rem;
+}
+
+.section-three .body .card, .section-three .body .section-one-card {
+  margin-top: 3.5rem;
+}
+
+.section-three .body .card-header {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.section-three .body .card-header .pattern {
+  display: block;
+  width: 96px;
+  height: 96px;
+  position: absolute;
+  bottom: -3rem;
+  background-color: #fcb72c;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+}
+
+.section-three .body .card-header .pattern .text {
+  position: relative;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  color: #4a5668;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 90rem) {
+  .section-three .body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+}
+
 .footer {
   width: 100%;
   position: relative;
