@@ -1,5 +1,6 @@
 .header-primary {
   @extend .header;
+  @include padding-y(7rem);
   background: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1620643203/scooter/images/ilttyo6u3ujlmkslrxyu.jpg') no-repeat center/cover;
 
 
