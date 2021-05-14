@@ -55,7 +55,7 @@
   @include breakpoint-up('md') {
     display: flex;
     @include padding-y(2rem);
-    align-items: center;
+    align-items: flex-end;
   }
 
 }
@@ -66,15 +66,6 @@
   @include breakpoint-up('md') {
     margin-right: 3rem;
   }
-}
-
-.footer-body {
-
-
-  @include breakpoint-up('md') {
-    align-items: flex-end;
-  }
-
 }
 
 .footer-body .menu {
