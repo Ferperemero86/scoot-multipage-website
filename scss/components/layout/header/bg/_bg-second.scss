@@ -1,0 +1,13 @@
+.bg-second {
+  background: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1620643200/scooter/images/z18ho02ua93xrkz23ngw.jpg') no-repeat center/cover;
+
+
+  @include breakpoint-up('md') {
+    background: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1620643200/scooter/images/ljdsvn0wbr3zakdv72es.jpg') no-repeat center/cover;
+  }
+
+  @include breakpoint-up('lg') {
+    background: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1620643201/scooter/images/ewl7lhexni4vejwj7eld.jpg') no-repeat center/cover;
+  }
+
+}
