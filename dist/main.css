@@ -1172,13 +1172,24 @@ h4 {
 
 .section-four .field-panel {
   position: relative;
-  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .section-four .field-panel:not(:first-child) {
   margin-top: 2rem;
+}
+
+.section-four .panel-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section-four .panel-body {
@@ -1188,6 +1199,32 @@ h4 {
   padding: 0rem 1.5rem 1.5rem 1.5rem;
   background-color: #f2f2f2;
   z-index: 9999;
+}
+
+.section-five .panel {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 62rem) {
+  .section-five .panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.section-five .panel:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.section-five .panel-btn {
+  margin-top: 1rem;
 }
 
 .footer {
@@ -1401,22 +1438,11 @@ h4 {
 }
 
 .panel {
+  max-width: 700px;
   background-color: #f2f2f2;
   color: #333a44;
   padding: 1.5rem;
   border-radius: 0.5rem;
-}
-
-.panel-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .panel-body {
