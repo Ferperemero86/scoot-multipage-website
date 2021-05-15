@@ -121,8 +121,34 @@
 .section-six-body {
   margin-top: 4rem;
   text-align: center;
+
+
+  @include breakpoint-up('lg') {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 
-.section-six-body .body-btn {
-  margin-top: 2rem;
+.section-six-body .body {
+
+  &-text {
+
+
+    @include breakpoint-up('lg') {
+      width: 80%;
+      display: grid;
+      text-align: left;
+      column-gap: 1rem;
+      grid-template-columns: 1fr 2fr;
+      align-items: flex-start;
+    }
+  }
+  
+  &-btn {
+
+    margin-top: 2rem;
+  }
+
 }
+
