@@ -1,0 +1,122 @@
+.section-six {
+  width: 100%;
+}
+
+.section-six-header {
+  position: relative;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+
+
+  @include breakpoint-up('md') {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include breakpoint-up('lg') {
+    width: 1100px;
+  }
+
+}
+
+.section-six-header .img {
+  max-width: 100%;
+  position: relative;
+  z-index: -2;
+}
+
+.section-six-header .location {
+
+    display: block;
+    max-width: 700px;
+    padding: 2rem 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 2rem;
+    @include color('second');
+    @include bg-color('sixth');
+
+    &-first {
+      top: 4em;
+      left: 6rem;
+
+
+      @include breakpoint-up('lg') {
+        top: 8em;
+        left: 11rem;
+      }
+
+    }
+
+    &-second {
+      top: 3rem;
+      left: 15.5rem;
+
+
+      @include breakpoint-up('lg') {
+        top: 5em;
+        left: 27rem;
+      }
+
+    }
+
+    &-third {
+      top: 12rem;
+      left: 30rem;
+
+
+      @include breakpoint-up('lg') {
+        top: 17em;
+        left: 49rem;
+      }
+
+    }
+
+    &-fourth {
+      top: 6rem;
+      left: 33rem;
+
+
+      @include breakpoint-up('lg') {
+        top: 9em;
+        left: 54.5rem;
+      }
+
+    }
+
+
+    &::before {
+
+
+      @include breakpoint-up('md') {
+        content: '';
+        position: absolute;
+        width: 0rem;
+        height: 0rem;
+        border-top: 4rem solid;
+        @include b-color('primary');
+        border-left: 2rem solid transparent;
+        border-right: 2rem solid transparent;
+        z-index: -1;
+        @include horizontal-alignment;
+      }
+
+    }
+
+
+    @include breakpoint-up('md') {
+      position: absolute;
+      padding: 1rem 0rem;
+      margin: 0rem;
+      width: 8rem;
+      @include bg-color('primary');
+    }
+
+}
+
+.section-six-body {
+
+}
