@@ -3,24 +3,25 @@
   margin-left: auto;
   margin-right: auto;
 
-
-  @include breakpoint-up('md') {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-  }
-
-}
-
-.section-five .panel {
-
   &:not(:first-child) {
 
     margin-top: 2rem;
   }
 
+
+  @include breakpoint-up('md') {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
 }
 
 .section-five .panel-btn {
-  margin-top: 1rem;
+ 
+  @include breakpoint-down('md') {
+    margin-top: 1rem;
+  }
+
 }

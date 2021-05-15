@@ -1207,6 +1207,10 @@ h4 {
   margin-right: auto;
 }
 
+.section-five .panel:not(:first-child) {
+  margin-top: 2rem;
+}
+
 @media screen and (min-width: 62rem) {
   .section-five .panel {
     display: -webkit-box;
@@ -1215,16 +1219,17 @@ h4 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: left;
   }
 }
 
-.section-five .panel:not(:first-child) {
-  margin-top: 2rem;
-}
-
-.section-five .panel-btn {
-  margin-top: 1rem;
+@media screen and (max-width: 61.9375rem) {
+  .section-five .panel-btn {
+    margin-top: 1rem;
+  }
 }
 
 .footer {
