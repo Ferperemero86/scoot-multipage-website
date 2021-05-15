@@ -1097,6 +1097,9 @@ h4 {
 }
 
 .section-three .body .card, .section-three .body .section-one-card {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 3.5rem;
 }
 
