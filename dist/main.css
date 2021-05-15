@@ -1350,6 +1350,15 @@ h4 {
   }
 }
 
+.section-six-body {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.section-six-body .body-btn {
+  margin-top: 2rem;
+}
+
 .footer {
   width: 100%;
   position: relative;
