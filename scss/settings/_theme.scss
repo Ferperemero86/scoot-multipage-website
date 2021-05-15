@@ -9,6 +9,7 @@ $colors: (
   'sixth': hsl(39, 100%, 94%), // Light Yellow
   'seventh': hsl(0, 100%, 100%), // white
   'eight' : hsl(215.3,14.3%,23.3%), // Darker Navy
+  'ninth': hsl(0,0%,94.9%), // Light Grey
 );
 
 
@@ -25,6 +26,7 @@ $par-sizes: (
 );
 
 $heading-sizes: (
+  'xsm': 1rem,
   'sm': 1.5rem,
   'md': 2.5rem,
   'lg': 3rem,

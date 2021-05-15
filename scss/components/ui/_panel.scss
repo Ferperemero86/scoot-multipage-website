@@ -1,0 +1,20 @@
+.panel {
+  @include bg-color('ninth');
+  @include color('eight');
+  padding: 1.5rem;
+  @include b-radius(0.5rem);
+
+  &-header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-body {
+    
+    margin-top: 1rem;
+
+  }
+
+}

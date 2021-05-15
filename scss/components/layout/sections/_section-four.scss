@@ -1,0 +1,52 @@
+.section-four-heading {
+  margin-bottom: 2rem;
+  text-align: center;
+
+
+  @include breakpoint-up('lg') {
+    margin-bottom: 4rem;
+  }
+}
+
+.section-four-body .field {
+  
+  &:not(:first-child) {
+
+    margin-top: 3rem;
+  }
+
+
+  @include breakpoint-up('lg') {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+.section-four .field-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-four .field-panel {
+  position: relative;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:not(:first-child) {
+
+    margin-top: 2rem;
+  }
+
+}
+
+.section-four .panel-body {
+  display: none;
+  position: absolute;
+  left: 0rem;
+  padding: 0rem 1.5rem 1.5rem 1.5rem;
+  @include bg-color('ninth');
+  z-index: 9999;
+}
+

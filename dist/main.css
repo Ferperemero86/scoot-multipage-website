@@ -435,8 +435,12 @@ h2 {
   }
 }
 
-h3, h4 {
+h3 {
   font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 62rem) {
@@ -522,9 +526,22 @@ h3, h4 {
   }
 }
 
+.arrow-up {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform .7s ease-in-out;
+  transition: -webkit-transform .7s ease-in-out;
+  transition: transform .7s ease-in-out;
+  transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
+}
+
 .arrow-down {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform .7s ease-in-out;
+  transition: -webkit-transform .7s ease-in-out;
+  transition: transform .7s ease-in-out;
+  transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
 }
 
 .hidden {
@@ -1097,6 +1114,55 @@ h3, h4 {
   }
 }
 
+.section-four-heading {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 90rem) {
+  .section-four-heading {
+    margin-bottom: 4rem;
+  }
+}
+
+.section-four-body .field:not(:first-child) {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 90rem) {
+  .section-four-body .field {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.section-four .field-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-four .field-panel {
+  position: relative;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-four .field-panel:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.section-four .panel-body {
+  display: none;
+  position: absolute;
+  left: 0rem;
+  padding: 0rem 1.5rem 1.5rem 1.5rem;
+  background-color: #f2f2f2;
+  z-index: 9999;
+}
+
 .footer {
   width: 100%;
   position: relative;
@@ -1305,5 +1371,28 @@ h3, h4 {
 .aligned-icons {
   display: -ms-grid;
   display: grid;
+}
+
+.panel {
+  background-color: #f2f2f2;
+  color: #333a44;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.panel-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.panel-body {
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

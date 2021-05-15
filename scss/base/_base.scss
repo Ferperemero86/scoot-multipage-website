@@ -95,8 +95,12 @@ h2 {
 
 }
 
-h3, h4 {
+h3 {
   @include font-size('sm', $heading-sizes);
+}
+
+h4 {
+  @include font-size('xsm', $heading-sizes);
 }
 
 
@@ -196,8 +200,14 @@ h3, h4 {
 // Transform //
 
 // Rotate
+.arrow-up {
+  transform: rotate(180deg);
+  transition: transform .7s ease-in-out;
+}
+
 .arrow-down {
-  transform: rotate(-90deg);
+  transform: rotate(0deg);
+  transition: transform .7s ease-in-out;
 }
 
 // Visibility //
