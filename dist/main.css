@@ -1228,7 +1228,6 @@ h4 {
 }
 
 .section-four .field-panel {
-  position: relative;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1251,9 +1250,7 @@ h4 {
 
 .section-four .panel-body {
   display: none;
-  position: absolute;
   left: 0rem;
-  padding: 0rem 1.5rem 1.5rem 1.5rem;
   background-color: #f2f2f2;
   z-index: 9999;
 }
