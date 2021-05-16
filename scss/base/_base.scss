@@ -227,7 +227,17 @@ h4 {
 
 .slide-left {
   margin-left: -50rem;
-  @include transition('margin-left', 3s);
+  @include transition('margin-left', 1s);
+}
+
+.slide-down {
+  height: 10rem;
+  @include transition('height', 10s);
+}
+
+.fixed {
+  position: fixed;
+  height: 0rem;
 }
 
 
