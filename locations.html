@@ -12,19 +12,32 @@
   <div class="wrapper">
 
     <!-- Menu-bar -->
-    <div class="menu-bar">
-      <img src="https://res.cloudinary.com/dby4kdmbv/image/upload/v1620643290/scooter/icons/o93g0v9km1rucbxkpbtk.svg" 
-           class="hamburger menu-bar-hamburger">
-      <img src="https://res.cloudinary.com/dby4kdmbv/image/upload/v1620713692/scooter/cz4al72bvxdeciwsuycf.svg"
-           class="logo menu-bar-logo">
-      <nav class="menu menu-bar-menu">
-        <a href="index.html" class="menu-link">Home</a>
-        <a href="about.html" class="menu-link">About</a>
-        <a href="locations.html" class="menu-link">Location</a>
-        <a href="careers.html" class="menu-link">Careers</a>
+    <div class="main-menu">
+      <div class="main-menu-bar container">
+        <img src="https://res.cloudinary.com/dby4kdmbv/image/upload/v1620643290/scooter/icons/o93g0v9km1rucbxkpbtk.svg" 
+             class="hamburger menu-bar-hamburger">
+        <img src="https://res.cloudinary.com/dby4kdmbv/image/upload/v1620643292/scooter/icons/y0ndiepqmxoadgmkppkk.svg" 
+             class="close-icon hidden menu-bar-hamburger">
+        <img src="https://res.cloudinary.com/dby4kdmbv/image/upload/v1620713692/scooter/cz4al72bvxdeciwsuycf.svg"
+             class="logo menu-bar-logo">
+        <nav class="menu menu-bar-menu">
+          <a href="index.html" class="menu-link">Home</a>
+          <a href="about.html" class="menu-link">About</a>
+          <a href="locations.html" class="menu-link">Location</a>
+          <a href="careers.html" class="menu-link">Careers</a>
         </nav>
-      <button class="btn menu-bar-btn">Get Scootin</button>
-    </div>
+        <button class="btn menu-bar-btn">Get Scootin</button>
+      </div>
+      <div class="main-menu-mobile">
+        <div class="menu mobile-menu container slide-left">
+          <a href="index.html" class="menu-link">Home</a>
+          <a href="about.html" class="menu-link">About</a>
+          <a href="locations.html" class="menu-link">Location</a>
+          <a href="careers.html" class="menu-link">Careers</a>
+          <button class="btn mobile-btn">Get Scootin</button>
+        </div>
+      </div>
+    </div>    
 
     <!-- Header -->
     <div class="header-second bg-third container">
@@ -112,6 +125,11 @@
     </div>
 
   </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+            crossorigin="anonymous"></script>
+    <script src="js/mobile-menu.js"></script>
 
 </body>
 </html>

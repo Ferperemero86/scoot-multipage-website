@@ -220,14 +220,14 @@ h4 {
   display: block;
 }
 
-.slide-up {
-  height: 0;
-  @include transition('height', 1s);
+.slide-right {
+  margin-left: 0rem;
+  @include transition('margin-left', 1s);
 }
 
-.slide-down {
-  height: auto;
-  @include transition('height', 3s);
+.slide-left {
+  margin-left: -50rem;
+  @include transition('margin-left', 3s);
 }
 
 
